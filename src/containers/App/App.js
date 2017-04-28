@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Header from '../../components/Header';
+import Header from '../../components/header';
 
 class App extends Component {
   render() {
