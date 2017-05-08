@@ -36,7 +36,7 @@ const links = [
 const Header = styled.div`
   max-width: 900px;
   margin: auto;
-  padding: 50px 0;
+  padding: 30px 0;
   position: relative;
 `
 

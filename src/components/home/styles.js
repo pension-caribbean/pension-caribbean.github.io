@@ -11,7 +11,7 @@ export const Content = styled.div`
 export const FirstModule = styled.div`
   display: flex;
   align-items: center;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 120px);
   justify-content: center;
   position: relative;
 `;
