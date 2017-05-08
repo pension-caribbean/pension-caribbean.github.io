@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { media } from '../../styles/utils';
 
  const StyledNavLink = styled(NavLink)`
-  padding: 10px;
+  padding: 10px 25px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: auto;
@@ -18,6 +18,7 @@ import { media } from '../../styles/utils';
   }
 
   ${media.tablet`
+    padding: 15px 10px;
     font-weight: normal;
     font-size: 20px;
     display: block;
