@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import {
-  DHeader,
-  HLink,
-  Home,
-  Navigation,
-  NavigationRight,
-  MenuArrow
-} from './styles';
-import Arrow from './arrow.svg';
+import styled from 'styled-components';
+import NavigationContainer from './navigation_container';
+import Navigation from './navigation';
+import HomeMenu from './home_menu';
+import Link from './link';
+import Arrow from './arrow';
 
 const links = [
   {
@@ -36,36 +33,54 @@ const links = [
   },
 ]
 
-class Header extends Component {
+const Header = styled.div`
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 0;
+  position: relative;
+`
+
+class HeaderComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {isToggleOn: false};
+    this.state = {toggle: NaN};
 
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
+    this.linkClick = this.linkClick.bind(this);
   }
 
   handleClick() {
     this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
+      toggle: !prevState.toggle
     }));
+  }
 
-    console.log(this.state.isToggleOn);
+  linkClick() {
+    this.setState({
+      toggle: false
+    });
   }
 
   render() {
     return (
-      <DHeader>
-        <Home to="/">Caribbean</Home>
-        <Navigation toggle={this.state.isToggleOn}>
-          <NavigationRight toggle={this.state.isToggleOn ? 'block' : 'none'}>
-            {links.map((link, index) => (<HLink to={link.path}>{link.text}</HLink>))}
-          </NavigationRight>
-        </Navigation>
-        <MenuArrow onClick={this.handleClick} toggle={this.state.isToggleOn}><img src={Arrow} alt="menu-arrow" /></MenuArrow>
-      </DHeader>
+      <Header className='header'>
+        <HomeMenu label='Caribbean' to='/' />
+        <NavigationContainer className='nav-container' toggle={this.state.toggle}>
+          <Navigation toggle={this.state.toggle}>
+            {links.map((link, index) => (
+              <Link
+                key={index}
+                to={link.path}
+                label={link.text}
+                linkClick={this.linkClick}/>
+              ))}
+          </Navigation>
+        </NavigationContainer>
+        <Arrow toggle={this.state.toggle} handleClick={this.handleClick}/>
+      </Header>
     );
   }
 }
 
-export default Header;
+export default HeaderComponent;
