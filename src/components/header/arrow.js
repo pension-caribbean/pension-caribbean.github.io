@@ -13,7 +13,7 @@ const MenuArrow = styled.div`
   
   ${media.tablet`
     position: absolute;
-    top: 50px;
+    top: 30px;
     right: 20px;
     display: flex;
     justify-content: center;

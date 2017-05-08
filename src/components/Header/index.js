@@ -58,14 +58,14 @@ class HeaderComponent extends Component {
 
   linkClick() {
     this.setState({
-      toggle: false
+      toggle: NaN
     });
   }
 
   render() {
     return (
       <Header className='header'>
-        <HomeMenu label='Caribbean' to='/' />
+        <HomeMenu label='Caribbean' to='/' linkClick={this.linkClick}/>
         <NavigationContainer className='nav-container' toggle={this.state.toggle}>
           <Navigation toggle={this.state.toggle}>
             {links.map((link, index) => (

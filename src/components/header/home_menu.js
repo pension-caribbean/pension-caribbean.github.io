@@ -26,10 +26,10 @@ const HomeMenuDiv = styled.div`
   `}
 `;
 
-const HomeMenuComponent = ({to, label}) => {
+const HomeMenuComponent = ({to, label, linkClick}) => {
   return (
     <HomeMenuDiv className='home'>
-      <StyledNavLink to={to}>{label}</StyledNavLink>
+      <StyledNavLink to={to} onClick={linkClick}>{label}</StyledNavLink>
     </HomeMenuDiv>
   );
 };
