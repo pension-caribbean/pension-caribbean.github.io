@@ -2,7 +2,6 @@ import React from 'react';
 import { Section, SectionHeader } from '../sections';
 import { Screen, Wrap } from '../screens';
 
-
 const SectionThird = ({title, id, href}) => {
   return (
     <Section>
