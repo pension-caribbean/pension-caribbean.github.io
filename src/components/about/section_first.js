@@ -3,12 +3,12 @@ import { Section, SectionHeader } from '../sections';
 import { Screen, Wrap } from '../screens';
 
 
-const SectionFirst = () => {
+const SectionFirst = ({href, id, title}) => {
   return (
     <Section>
       <Screen style={{minHeight: 'calc(100vh - 125px)'}}>
         <Wrap>
-          <SectionHeader title='First Section' href='#' />
+          <SectionHeader title={title} href={href} id={id}/>
           <div style={{textAlign: 'center'}}>
             Tiramisu fruitcake chupa chups chocolate bar tootsie roll cake cake marshmallow powder. Cake chocolate bar cotton candy cake. Lollipop cake pastry liquorice. Halvah ice cream marzipan donut tart lollipop pie pastry lemon drops. Cupcake brownie jelly-o donut pie soufflé jelly chocolate biscuit. Tiramisu cookie fruitcake sweet roll sweet sesame snaps tart. Fruitcake tart tootsie roll danish cheesecake candy canes cheesecake.
   Bonbon cheesecake carrot cake muffin lemon drops chocolate bar dessert lollipop sesame snaps. Toffee topping chocolate biscuit. Chocolate bar sugar plum muffin tiramisu lemon drops. Caramels marzipan jelly-o cake cake soufflé oat cake. Liquorice lollipop macaroon cotton candy caramels apple pie jelly beans chupa chups biscuit. Jelly-o oat cake tiramisu chocolate cake marshmallow apple pie jelly-o cake. Dragée bear claw tart wafer bear claw cake. Bonbon cookie carrot cake liquorice lemon drops wafer. Pie caramels brownie sweet roll liquorice. Sesame snaps jelly jelly beans chupa chups caramels lemon drops gingerbread gingerbread jelly.

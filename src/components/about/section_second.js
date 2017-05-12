@@ -3,12 +3,12 @@ import { Section, SectionHeader } from '../sections';
 import { Screen, Wrap } from '../screens';
 
 
-const SectionSecond = () => {
+const SectionSecond = ({title, id, href}) => {
   return (
     <Section>
       <Screen>
         <Wrap>
-        <SectionHeader title='Section Second' href='#second' />
+        <SectionHeader title={title} href={href} id={id}/>
           <div>
             Bonbon liquorice chocolate bar chupa chups topping dragée icing liquorice. Bear claw cotton candy croissant caramels dragée. Dessert marzipan pudding macaroon jelly beans dessert dessert sweet carrot cake. Topping cake cotton candy candy biscuit gummies jelly jelly-o. Fruitcake sweet chocolate bar lollipop carrot cake apple pie. Marshmallow cookie croissant pastry macaroon wafer chocolate bar pie chocolate cake. Fruitcake cake gummi bears brownie jelly lemon drops. Sweet marshmallow jelly marshmallow fruitcake jujubes topping. Chocolate bar tiramisu marshmallow pie sweet roll cheesecake sugar plum fruitcake bear claw. Sweet roll biscuit powder sweet. Marzipan cake marzipan apple pie pudding jelly cookie. Candy canes brownie halvah tart jujubes jelly. Jelly fruitcake bear claw icing marzipan fruitcake icing pastry chocolate cake.
   Chocolate liquorice cookie chocolate liquorice gummies chocolate bar. Caramels marzipan brownie toffee bonbon muffin gummies tiramisu. Biscuit danish toffee candy canes tiramisu liquorice croissant sugar plum apple pie. Dessert cake candy carrot cake candy canes. Powder jujubes marzipan cookie gingerbread caramels lemon drops bear claw liquorice. Donut tart pudding wafer dragée tootsie roll chocolate jelly-o carrot cake. Sweet roll gummi bears brownie donut croissant gingerbread halvah. Jelly-o jelly jelly beans chocolate cake. Marshmallow cotton candy cookie biscuit tootsie roll. Pie chocolate topping carrot cake biscuit. Chocolate cake cake macaroon. Candy canes danish pastry. Jujubes candy canes gummies icing macaroon tiramisu marzipan.

@@ -7,10 +7,10 @@ const A = styled.a`border-bottom: 1px solid transparent;color: inherit;margin-ri
 `
 
 
-const SectionHeader = ({title, href}) => {
+const SectionHeader = ({title, href, id}) => {
   return (
     <H2>
-      <span id class="target"></span>
+      <span id={id}></span>
       <A href={href}>{title}</A>
     </H2>
   );

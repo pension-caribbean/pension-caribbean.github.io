@@ -5,15 +5,13 @@ import SectionSecond from './section_second';
 import SectionThird from './section_third';
 
 
-const AboutSections = () => {
+const AboutSections = ({links}) => {
   return (
-    <div>
-      <Sections>
-        <SectionFirst />
-        <SectionSecond />
-        <SectionThird />
-      </Sections>
-    </div>
+    <Sections>
+      <SectionFirst href={links[0].href} title={links[0].title} id={links[0].id} />
+      <SectionSecond href={links[1].href} title={links[1].title} id={links[1].id} />
+      <SectionThird href={links[2].href} title={links[2].title} id={links[2].id} />
+    </Sections>
   );
 };
 
