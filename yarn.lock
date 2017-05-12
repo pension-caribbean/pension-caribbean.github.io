@@ -3337,6 +3337,10 @@ lodash.cond@^4.3.0:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/lodash.cond/-/lodash.cond-4.5.2.tgz#f471a1da486be60f6ab955d17115523dd1d255d5"
 
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+
 lodash.isarguments@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
@@ -4411,6 +4415,15 @@ react-event-listener@^0.4.5:
     prop-types "^15.5.4"
     warning "^3.0.0"
 
+react-image-gallery@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-0.8.0.tgz#d8dc439ff3ca55b5194107eda98232af9f31f57b"
+  dependencies:
+    lodash.debounce "^4.0.8"
+    lodash.throttle "^4.1.1"
+    prop-types "^15.5.8"
+    react-swipeable "^4.0.0"
+
 react-router-dom@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.1.1.tgz#3021ade1f2c160af97cf94e25594c5f294583025"
@@ -4483,6 +4496,12 @@ react-sticky@^6.0.1:
   dependencies:
     prop-types "^15.5.8"
     raf "^3.3.0"
+
+react-swipeable@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-4.0.0.tgz#5f574c59b8518fcf018cc4b83e1bd4e62284dc7c"
+  dependencies:
+    prop-types "^15.5.8"
 
 react@^15.5.4:
   version "15.5.4"
