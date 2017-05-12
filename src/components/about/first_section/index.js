@@ -41,6 +41,7 @@ const SectionFirst = ({href, id, title}) => {
               autoPlay={true}
             />
           </div>
+          <SectionHeader title={title} href={href} id={id}/>
         </Wrap>
       </Screen>
     </Section>

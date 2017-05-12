@@ -9,27 +9,29 @@ const StyledNavLink = styled(NavLink)`
   cursor: auto;
   font-family: 'Eagle Lake', cursive;
   font-weight: bold;
-  font-size: 25px;
-  color: #000;
+  font-size: 15px;
+  color: white;
 `;
 
 const HomeMenuDiv = styled.div`
-  display: block;
-  position: relative;
-  width: 200px;
-  height: 60px;
-
-  padding: 10px;
+  margin-right: 20px;
+  width: 120px;
+  height: 27px;
+  padding: 1px;
 
   ${media.tablet`
-    margin-left: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    width: calc(100% - 15px);
+    height: none;
   `}
 `;
 
-const HomeMenuComponent = ({to, label, linkClick}) => {
+const HomeMenuComponent = ({to, label}) => {
   return (
     <HomeMenuDiv className='home'>
-      <StyledNavLink to={to} onClick={linkClick}>{label}</StyledNavLink>
+      <StyledNavLink to={to}>{label}</StyledNavLink>
     </HomeMenuDiv>
   );
 };
