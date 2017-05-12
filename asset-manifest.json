@@ -1,7 +1,11 @@
 {
   "main.css": "static/css/main.b71a77e5.css",
   "main.css.map": "static/css/main.b71a77e5.css.map",
-  "main.js": "static/js/main.51fc9fe8.js",
-  "main.js.map": "static/js/main.51fc9fe8.js.map",
-  "static/media/arrow.svg": "static/media/arrow.0336800d.svg"
+  "main.js": "static/js/main.dc90358c.js",
+  "main.js.map": "static/js/main.dc90358c.js.map",
+  "static/media/arrow.svg": "static/media/arrow.0336800d.svg",
+  "static/media/caribbean01.jpg": "static/media/caribbean01.4d1e561d.jpg",
+  "static/media/caribbean02.jpg": "static/media/caribbean02.e5713eec.jpg",
+  "static/media/caribbean03.jpg": "static/media/caribbean03.1c7f649b.jpg",
+  "static/media/caribbean04.jpg": "static/media/caribbean04.889a4279.jpg"
 }
