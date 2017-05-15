@@ -19,7 +19,7 @@ const HomeMenuDiv = styled.div`
   height: 27px;
   padding: 1px;
 
-  ${media.tablet`
+  ${media.phone`
     margin-bottom: 30px;
     text-align: center;
 

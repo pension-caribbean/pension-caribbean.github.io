@@ -8,7 +8,7 @@ const UL = styled.ul`
   padding: 0;
   list-style: none;
 
-  ${media.tablet`
+  ${media.phone`
     text-align: center;
     margin: 0 0 30px 0;
   `}
@@ -20,7 +20,7 @@ const LI = styled.li`
   line-height: 20px;
   margin-right: 15px;
   
-  ${media.tablet`
+  ${media.phone`
     display: inline;
   `}
 `
@@ -41,8 +41,8 @@ const NavigationComponent = () => {
   return (
     <UL>
       <LI><LINK to="/">Home</LINK></LI>
-      <LI><LINK to="/">AAAAAA</LINK></LI>
-      <LI><LINK to="/">BB bB</LINK></LI>
+      <LI><LINK to="/about">About</LINK></LI>
+      <LI><LINK to="/blog">Blog</LINK></LI>
     </UL>
   );
 };

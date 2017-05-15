@@ -8,6 +8,7 @@ import {
 import Arrow from './arrow.svg';
 
 const Home = () => {
+  window.scrollTo(0,0);
   return (
     <Content>
       <FirstModule>

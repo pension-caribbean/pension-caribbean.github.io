@@ -17,7 +17,7 @@ export default styled.div`
     padding-left: 30px;
   `}
 
-  ${media.tablet`
+  ${media.phone`
     display: block;
   `}
 `

@@ -13,12 +13,12 @@ const Routes = () => {
   return (
     <div>
       <Route exact path="/" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/blog" component={Blog} />
-      <Route exact path="/facility" component={Facility} />
-      <Route exact path="/service" component={Service} />
-      <Route exact path="/reservation" component={Reservation} />
-      <Route exact path="/tour" component={Tour} />
+      <Route path="/about" component={About} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/facility" component={Facility} />
+      <Route path="/service" component={Service} />
+      <Route path="/reservation" component={Reservation} />
+      <Route path="/tour" component={Tour} />
     </div>
   );
 };

@@ -1,18 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
+import { media } from '../../styles/utils';
+import ImageChanger from '../img_changer';
 
-import facebook from './facebook.svg'
+import facebook_gray from './facebook_gray.svg'
+import facebook_white from './facebook_white.svg'
 
 const Right = styled.div`
   text-align: right;
   color: #666;
-  font-size: 12px;
+  font-size: 11px;
   flex-grow: 2;
 `
 
 const Contact = styled.span`
   display: block;
   margin: 0 0 10px 0;
+
+  ${media.phone`
+    text-align: center;
+  `}
+`
+
+const Copyright = styled.span`
+  display: block;
+
+  ${media.phone`
+    text-align: center;
+  `}
 `
 
 const UL = styled.ul`
@@ -32,9 +47,15 @@ const LI = styled.li`
 `
 
 const A = styled.a`
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+  display: block;
+
+  text-decoration: none;
+  font-size: 13px;
+  color: #666;
+
+  &:hover {
+    color: #FFF;
+  }
 `
 
 const RightComponent = () => {
@@ -42,9 +63,13 @@ const RightComponent = () => {
     <Right className="right">
       <Contact>
         <UL>
-          <LI><A href="https://facebook.com" target="_blank"><img src={facebook} alt="facebook"/></A></LI>
+          <LI><A href="https://facebook.com" target="_blank"><ImageChanger overImg={facebook_white} outImg={facebook_gray} alt="facebook"/></A></LI>
+          <A href="mailto:pension.caribbean@gmail.com">pension.caribbean@gmail.com</A>
         </UL>
       </Contact>
+      <Copyright>
+        <span class="text">Copyright</span>©2017 Hare. All rights reserved.
+      </Copyright>
     </Right>
   );
 };

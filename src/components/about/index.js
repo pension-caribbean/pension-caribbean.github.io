@@ -20,6 +20,7 @@ const links = [
 ]
 
 const About = () => {
+  window.scrollTo(0,0);
   return (
     <div>
       <Sections links={links}/>

@@ -4,7 +4,7 @@ const sizes = {
   giant: 1170,
   desktop: 1050,
   tablet: 950,
-  phone: 376
+  phone: 700
 }
 
 export const media = Object.keys(sizes).reduce((accumulator, label) => {
