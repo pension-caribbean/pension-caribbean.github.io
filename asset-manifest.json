@@ -1,12 +1,13 @@
 {
   "main.css": "static/css/main.3b422e76.css",
   "main.css.map": "static/css/main.3b422e76.css.map",
-  "main.js": "static/js/main.10fbd834.js",
-  "main.js.map": "static/js/main.10fbd834.js.map",
-  "static/media/arrow.svg": "static/media/arrow.fdddb37c.svg",
+  "main.js": "static/js/main.1fe86565.js",
+  "main.js.map": "static/js/main.1fe86565.js.map",
+  "static/media/arrow.svg": "static/media/arrow.0336800d.svg",
   "static/media/caribbean01.jpg": "static/media/caribbean01.4d1e561d.jpg",
   "static/media/caribbean02.jpg": "static/media/caribbean02.e5713eec.jpg",
   "static/media/caribbean03.jpg": "static/media/caribbean03.1c7f649b.jpg",
   "static/media/caribbean04.jpg": "static/media/caribbean04.889a4279.jpg",
-  "static/media/facebook.svg": "static/media/facebook.ed07b1a1.svg"
+  "static/media/facebook_gray.svg": "static/media/facebook_gray.2dd58ce5.svg",
+  "static/media/facebook_white.svg": "static/media/facebook_white.b837eb5e.svg"
 }
